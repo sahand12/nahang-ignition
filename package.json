@@ -2,5 +2,31 @@
   "name": "ignition",
   "version": "0.0.1",
   "main": "index.js",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint lib test",
+    "test": "npm run lint && mocah -- $(find test -name '*.test.js')"
+  },
+  "dependencies": {
+    "bunyan": "^1.8.12",
+    "bunyan-loggly": "^1.3.3",
+    "caller": "^1.0.1",
+    "debug": "^3.1.0",
+    "find-root": "^1.1.0",
+    "fs-extra": "^5.0.0",
+    "json-stringify-safe": "^5.0.1",
+    "lodash": "^4.17.5",
+    "luxon": "^1.0.0",
+    "moment": "^2.22.0",
+    "nconf": "^0.10.0",
+    "prettyjson": "^1.2.1",
+    "uuid": "^3.2.1"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "eslint": "^4.19.1",
+    "mocha": "^5.0.5",
+    "should": "^13.2.1",
+    "sinon": "^4.5.0"
+  }
 }
