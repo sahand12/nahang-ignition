@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "lint": "eslint lib test",
-    "test": "npm run lint && mocah -- $(find test -name '*.test.js')"
+    "test": "npm run lint && mocha -- $(find test -name '*.test.js')"
   },
   "dependencies": {
     "bunyan": "^1.8.12",
