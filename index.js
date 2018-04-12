@@ -7,5 +7,11 @@ module.exports = {
   },
   get logging() {
     return require('./lib/logging');
+  },
+  get debug() {
+    return require('./lib/debug');
+  },
+  get server() {
+    return require('./lib/server');
   }
-}
+};
